@@ -1,5 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Home from './views/Home.vue';
+</script>
 
-<template><h1 class="text-blue-400">App.vue sfsgsg</h1></template>
+<template>
+  <Home />
+</template>
 
 <style scoped></style>
