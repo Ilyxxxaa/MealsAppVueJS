@@ -16,7 +16,7 @@ socket.addEventListener("message", (e) => {
     FROMSYMBOL: currency,
     PRICE: newPrice,
   } = JSON.parse(e.data);
-  if (type !== AGGREGATE_INDEX) {
+  if (type !== AGGREGATE_INDEX || newPrice === undefined) {
     return;
   }
   const handlers = tickersHandlers.get(currency) ?? [];
